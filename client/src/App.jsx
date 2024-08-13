@@ -1,12 +1,18 @@
 
 import './App.css'
-
+import {Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Chat from './pages/Chat'
 function App() {
 
   return (
     <>
-   <h1>Welcome To Ascord</h1>
-   <p>This is my working play ground for the Ascord</p>
+    <div className='App' >
+<Routes>
+    <Route path='/' Component={Home}  />
+    <Route path='/chat' Component={Chat}  />
+</Routes>
+    </div>
     </>
   )
 }
